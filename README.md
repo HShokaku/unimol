@@ -5,7 +5,7 @@ This repository is a personal usage of [UniMol](https://github.com/deepmodeling/
 ```bash
 mamba create -n unimol python==3.10
 mamba activate unimol
-pip install torch --index-url https://download.pytorch.org/whl/cu121
+mamba install pytorch==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia
 pip install rdkit==2022.9.5
 pip install unimol_tools
 pip install huggingface_hub
